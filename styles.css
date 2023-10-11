@@ -1,0 +1,148 @@
+/*## Colors
+
+### Primary
+
+- Tomato: hsl(4, 100%, 67%)
+
+### Neutral
+
+- Dark Slate Grey: hsl(234, 29%, 20%)
+- Charcoal Grey: hsl(235, 18%, 26%)
+- Grey: hsl(231, 7%, 60%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Roboto](https://fonts.google.com/specimen/Roboto)
+- Weights: 400, 700
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(234, 29%, 20%);
+  font-size: 16px;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.start-form,
+.thanks-message {
+  background-color: #fff;
+}
+
+.start-form {
+  display: flex;
+  max-width: 900px;
+  max-height: 550px;
+  border-radius: 20px;
+}
+.illustration {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: -5px;
+}
+
+.text-block > h1 {
+  font: weight 700px;
+  font-size: 45px;
+  text-align: center;
+  margin: 70px 30px 10px 30px;
+}
+.text-block > h5 {
+  margin: 10px 30px 10px 80px;
+  padding: 10px 30px 10px 20px;
+}
+
+.text-block > p {
+  margin: 5px 50px 2px 70px;
+  padding: 2px 20px 0px 5px;
+  font-size: 14px;
+}
+.text-block > h6 {
+  margin: 35px 30px 5px 90px;
+}
+
+input {
+  height: 40px;
+  width: 350px;
+  margin: 1px 30px 10px 90px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.submit {
+  height: 40px;
+  width: 350px;
+  margin: 1px 30px 10px 90px;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(237, 24, 88),
+    hsl(4, 100%, 67%)
+  );
+  color: #fff;
+}
+.hidden {
+  display: none;
+}
+
+.check-mark {
+  margin-right: 10px;
+}
+
+.thanks-message {
+  max-width: 480px;
+  max-height: 500px;
+  border-radius: 30px;
+}
+.thanks-message > .thanks-mark {
+  margin: 20px 30px 10px 40px;
+}
+
+.thanks-message > h1 {
+  margin: 10px 30px 10px 70px;
+}
+
+.thanks-message > p {
+  margin: 10px 80px 10px 40px;
+}
+
+#dismiss {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 70px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
