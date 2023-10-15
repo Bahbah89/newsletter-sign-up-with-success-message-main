@@ -50,8 +50,17 @@
             class="check-mark"
           />And much more!
         </p>
-        <h6>Email address</h6>
-        <input type="email" id="email-field" />
+        <h6>
+          Email address<span class="valid hidden">Valid email required</span>
+        </h6>
+        <h7> </h7>
+        <input
+          type="email"
+          required
+          id="email-field"
+          placeholder="email@company.com"
+          value=""
+        />
         <button class="submit" id="subscribe">
           Subscribe to monthly newsletter
         </button>
@@ -71,8 +80,8 @@
       <h1>Thanks for subscribing!</h1>
       <p>
         A confirmation email has been sent to
-        <span id="user-email"></span>. Please open it and click the button inside
-        to confirm your subscription.
+        <span id="user-email"></span>. Please open it and click the button
+        inside to confirm your subscription.
       </p>
       <button class="submit" id="dismiss">Dismiss message</button>
     </div>
